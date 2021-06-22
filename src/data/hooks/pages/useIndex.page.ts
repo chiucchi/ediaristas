@@ -30,6 +30,7 @@ export default function useIndex() {
 			setCarregando(false);
 		} catch (error) {
 			setErro('CEP não encontrado');
+			console.log(error);
 			setCarregando(false);
 		}
 	}
